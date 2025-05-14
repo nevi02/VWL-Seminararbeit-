@@ -32,10 +32,6 @@
 %
 % @stud: Sprache ggf. anpassen
 %
-%\usepackage[ngerman]{babel} 	        % german language
-%\usepackage[german=quotes]{csquotes} 	% correct quoting using \enquote{}
-\usepackage[english]{babel}          % english language
-\usepackage{csquotes} 	              % correct quoting using \enquote{}
 
 %%%%%%%%%%%%%
 %% ZITIERSTIL
@@ -92,20 +88,20 @@
 \newcommand{\nowrite}[1]{}
 \newcommand{\NN}{{\mathbb N}}
 \newcommand{\imagedir}{img}
-\newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}\hypersetup{pdftitle={#1}}}
-\newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}\hypersetup{pdfauthor={#1}}}
-\newcommand{\Firma}[1]{\def\DerNameDerFirma{#1}}
-\newcommand{\Kurs}[1]{\def\DieKursbezeichnung{#1}}
-\newcommand{\Abteilung}[1]{\def\DerNameDerAbteilung{#1}}
-\newcommand{\Studiengangsleiter}[1]{\def\DerStudiengangsleiter{#1}}
-\newcommand{\WissBetreuer}[1]{\def\DerWissBetreuer{#1}}
-\newcommand{\FirmenBetreuer}[1]{\def\DerFirmenBetreuer{#1}}
-\newcommand{\Bearbeitungszeitraum}[1]{\def\DerBearbeitungszeitraum{#1}}
-\newcommand{\Abgabedatum}[1]{\def\DasAbgabedatum{#1}}
-\newcommand{\Matrikelnummer}[1]{\def\DieMatrikelnummer{#1}}
-\newcommand{\Studienrichtung}[1]{\def\DieStudienrichtung{#1}}
-\newcommand{\ArtDerArbeit}[1]{\def\DieArtDerArbeit{#1}}
-\newcommand{\Literaturverzeichnis}{Literaturverzeichnis}
+% \newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}\hypersetup{pdftitle={#1}}}
+% \newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}\hypersetup{pdfauthor={#1}}}
+% \newcommand{\Firma}[1]{\def\DerNameDerFirma{#1}}
+% \newcommand{\Kurs}[1]{\def\DieKursbezeichnung{#1}}
+% \newcommand{\Abteilung}[1]{\def\DerNameDerAbteilung{#1}}
+% \newcommand{\Studiengangsleiter}[1]{\def\DerStudiengangsleiter{#1}}
+% \newcommand{\WissBetreuer}[1]{\def\DerWissBetreuer{#1}}
+% \newcommand{\FirmenBetreuer}[1]{\def\DerFirmenBetreuer{#1}}
+% \newcommand{\Bearbeitungszeitraum}[1]{\def\DerBearbeitungszeitraum{#1}}
+% \newcommand{\Abgabedatum}[1]{\def\DasAbgabedatum{#1}}
+% \newcommand{\Matrikelnummer}[1]{\def\DieMatrikelnummer{#1}}
+% \newcommand{\Studienrichtung}[1]{\def\DieStudienrichtung{#1}}
+% \newcommand{\ArtDerArbeit}[1]{\def\DieArtDerArbeit{#1}}
+% \newcommand{\Literaturverzeichnis}{Literaturverzeichnis}
 
 % Page Layout
 \oddsidemargin=0mm
@@ -136,18 +132,19 @@
 %
 % PERSÖNLICHE ANGABEN (BITTE VOLLSTÄNDIG EINGEBEN zwischen den Klammern: {...})
 %
-\ArtDerArbeit{<Bachelor>/<Projekt>} % "Bachelor" oder "Projekt" wählen
-\TitelDerArbeit{<Titel Ihrer Arbeit>}
-\AutorDerArbeit{<Ihr Vor- und Nachname>}
+\ArtDerArbeit{Projekt} % "Bachelor" oder "Projekt" wählen
+\TitelDerArbeit{Emissionszertifikate als umweltpolitisches Instrument gegen den Klimawandel:
+Theorie und Praxis}
+\AutorDerArbeit{Iven Stahl}
 \Abteilung{<Ihre Abteilung>}
 \Firma{<Ihre Firma>}
-\Kurs{<Ihr Kurs>}
-\Studienrichtung{<Ihre Studienrichtung>}
-\Matrikelnummer{<Ihre Martikelnummer>}
-\Studiengangsleiter{<Ihr Studiengangsleiter>}
+\Kurs{VWL Wirtschaftspolitik}
+\Studienrichtung{Software Engineering}
+\Matrikelnummer{9820647}
+\Studiengangsleiter{}
 \WissBetreuer{<Ihr(e) wissenschaftliche(r) Betreuer(in)>}
 \FirmenBetreuer{<Ihr(e) Firmenbetreuer(in)>}
-\Bearbeitungszeitraum{dd.mm.yyyy -- DD.MM.YYYY}
+\Bearbeitungszeitraum{14.05.2025 -- 26.07.2025}
 \Abgabedatum{dd.mm.yyyy}
 
 \begin{document}
@@ -168,8 +165,8 @@
 %
 % @stud: nondisclosurenotice.tex bearbeiten
 %
-\input{nondisclosurenotice} 
-\cleardoublepage
+%\input{nondisclosurenotice} 
+%\cleardoublepage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,8 +174,8 @@
 %
 % @stud: acknowledge.tex bearbeiten
 %
-\input{acknowledge}
-\cleardoublepage 
+% \input{acknowledge}
+% \cleardoublepage 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -190,29 +187,29 @@
 \cleardoublepage
 
 % Abbildungsverzeichnis
-\phantomsection
-\addcontentsline{toc}{chapter}{\listfigurename}
-\listoffigures
-\cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{\listfigurename}
+% \listoffigures
+% \cleardoublepage
 
 %	Tabellenverzeichnis
-\phantomsection
-\addcontentsline{toc}{chapter}{\listtablename}
-\listoftables
-\cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{\listtablename}
+% \listoftables
+% \cleardoublepage
 
 %	Listingsverzeichnis / Quelltextverzeichnis
-\lstlistoflistings
-\cleardoublepage
+% \lstlistoflistings
+% \cleardoublepage
 
 % Algorithmenverzeichnis
-\listofalgorithms
-\cleardoublepage
+% \listofalgorithms
+% \cleardoublepage
 
 % Abkürzungsverzeichnis
 % @stud: acronyms.tex bearbeiten
-\input{acronyms} 
-\cleardoublepage
+% \input{acronyms} 
+% \cleardoublepage
 
 \onehalfspacing
 
@@ -244,7 +241,7 @@
 \input{chapter2}
 
 % Fazit und Ausblick
-\input{conclusion}
+%\input{conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -253,12 +250,12 @@
 % @stud: einzelne Anhänge bearbeiten und eigene Anhänge hier einfügen 
 %        die nachfolgenden Zeilen deaktivieren, wenn keine Anhänge verwendet werden
 %
-\initializeAppendix
-\input{appendix1}
-\input{appendix2}
+%\initializeAppendix
+%\input{appendix1}
+%\input{appendix2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\singlespacing
+%\singlespacing
 
 %\ihead{}
 %\printbibliography[title=\Literaturverzeichnis] 
@@ -272,7 +269,7 @@
 % INDEX
 % @stud: ggf. Index auskommentieren, wenn nicht benötigt
 %
-\addcontentsline{toc}{chapter}{Index}
-\printindex
+%\addcontentsline{toc}{chapter}{Index}
+%\printindex
 
 \end{document}
